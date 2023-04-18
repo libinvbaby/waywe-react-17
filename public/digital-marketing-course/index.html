@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<!-- Meta
+	============================================= -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, max-scale=1">
+
+    <meta name="author" content="ExplicitConcepts">
+    <!-- description -->
+    <meta name="description" content="">
+    <!-- keywords -->
+    <meta name="keywords" content="">
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<link href="css/css-assets.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700i,700" rel="stylesheet">
+
+	<!-- Favicon
+	============================================= -->
+	<link rel="shortcut icon" href="images/files/logo.png">
+	<link rel="apple-touch-icon" href="images/files/logo.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/files/logo.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/files/logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Title
+	============================================= -->
+	<title>Waywedesign</title>
+	<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("XWg3U4JRh6-x5TvyX");
+})();
+</script>
+<style>
+	.popup {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 999;
+	}
+	
+	.popup-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	
+	.close-btn {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+ @media only screen and (max-width:768px){
+	    .popup-content {
+    width: 100%;}
+	}
+</style>
+</head>
+
+<body>
+
+	<!-- <div id="scroll-progress"><div class="scroll-progress"><span class="scroll-percent"></span></div></div> -->
+
+	<!-- Document Full Container
+	============================================= -->
+	<!-- navabar start -->
+	<header id="header">
+
+		<nav class="navbar navbar-expand-lg bg-white fixed-top">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#"><img width="200px" src="./images/files/logo-wwd.png" alt=""></a>
+			  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button> -->
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#about">About Us</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#certification">Certification</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#footer">Contact Us</a>
+				  </li>
+				  <li class="nav-item enrol-now">
+					<a  class="nav-link text-white " href="#">Enroll Now</a>
+				  </li>
+				  
+				 
+				</ul>
+				
+			  </div>
+			</div>
+		  </nav>
+	</header><!-- #header end -->
+	<!-- navabar end -->
+	<div id="full-container">
+
+		<!-- Header
+		============================================= -->
+		
+	
+		<!-- Banner
+		============================================= -->
+		<section id="banner" >
+
+			<div class="banner-parallax" >
+				
+				<div class="overlay-colored color-bg-gradient opacity-90"></div><!-- .overlay-colored end -->
+				<div class="slide-content">
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-7 col-12" >
+
+								<img class="for-lap text-center" width="100%" src="./images/inside-banner.png" alt="">
+								<img class="for-mobile pb-4 text-center" width="100%" src="./images/inside-banner-mobile.png" alt="">
+								<div class="buttons" >
+
+									<a  class="btn register-now scroll-to small mt-40 p-4" href="#form">Register Now</a>
+									<a  class="btn brouchure-btn scroll-to small  mt-40 p-4 rounded-4" onclick="document.getElementById('popup').style.display='block'" >DOWNLOAD  BROUCHURE </a><br>
+								</div>
+								<div class="button-for-mobile" >
+
+									<a  class="btn register-now scroll-to small mt-40 p-4" href="#form">Register Now</a>
+									<!-- <a  class="btn brouchure-btn scroll-to small  mt-40 p-4 rounded-4" href="#banner">DOWNLOAD  BROUCHURE </a><br> -->
+								</div>
+								<!-- <div class="banner-center-box text-white md-text-center" >
+									<h1>
+										SEO & Digital Marketing 
+									</h1>
+									<h3 >Course 
+										Course With Internship
+										</h3>
+									<div class="description">
+										Learn the Latest Digital Marketing Strategies and Live Project Experience
+
+									</div>
+									<div class="buttons" >
+
+										<a  class="btn register-now scroll-to small mt-40 p-4" href="#banner">Register Now</a>
+										<a  class="btn brouchure-btn scroll-to small  mt-40 p-4 rounded-4" href="#banner">DOWNLOAD  BROUCHURE </a><br>
+									</div>
+									<a class="btn-video lightbox-iframe mt-40" href="https://vimeo.com/45830194">
+										<i class="fa fa-play"></i>
+										<span class="title">Watch Overview<br>Video in 40 Second...</span>
+									</a> .video-btn end 
+								</div> -->
+								<!-- .banner-center-box end -->
+
+							</div><!-- .col-md-7 end -->
+							
+							<div class="col-md-4 col-12">
+
+								<div class="banner-center-box text-center text-white">
+									<div class="cta-subscribe cta-subscribe-2 box-form">
+										<div class="box-title text-white">
+											<h3 class="title">Register Now</h3>
+											<!-- <p></p> -->
+											<img class="svg" src="images/general-elements/section-separators/rounded.svg" alt="">
+										</div><!-- .box-title end -->
+										<div class="box-content">
+											<form id="form" data-toggle="validator" class="form-inline" method="Post">
+												<div class="cs-notifications" novalidate="novalidate">
+												  <div class="cs-notifications-content"></div>
+												</div>
+												<div class="form-group">
+												  <input  type="text" name="name"  id="name" class="form-control" placeholder="Your Name *">
+												</div>
+												<div class="form-group">
+												  <input  type="text" name="email"  id="email" class="form-control" placeholder="Your Email *">
+												</div>
+												<div class="form-group">
+												  <input  type="num" name="phone" id="phone" class="form-control" placeholder="Phone Number *">
+												</div>
+												<div class="form-group">
+												  <input type="text" name="qualification"  id="qualification" class="form-control" placeholder="Education Qualification">
+												</div> 
+												<div class="text-center py-3 ">
+													
+													<input type="submit" class="form-control" id="success-button" name="Register Now"  onclick="sendMail()"></input>
+												</div> 
+												
+											  </form>
+											  
+										</div><!-- .box-content end -->
+									</div><!-- .box-form end -->
+								</div>
+
+							</div><!-- .col-md-5 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+
+				</div><!-- .slide-content end -->
+				<div class="section-separator wave-1 bottom">
+					<!-- <div class="ss-content">
+						<img class="svg" src="images/general-elements/section-separators/wave-1.svg" alt="">
+					</div> -->
+					<!-- .ss-content -->
+				</div><!-- .section-separator -->				
+			</div><!-- .banner-parallax end -->
+
+		</section><!-- #banner end -->
+<!-- about sec start -->
+<div class="container aboutsec" id="about">
+	<div class="row">
+		<div class="col-md-6 col-md-push-6 align-self-center">
+			
+			<div class="section-title abouttext">
+				<!-- <span>Our Services</span> -->
+				<h2 class="text-dark">About Us
+				</h2>
+				<p class=" text-justify text-dark">
+					<b>Our program is based in Kochi, one of India's fastest-growing digital marketing hubs. We've partnered with leading companies in the region to provide you with a hands-on internship experience and help you build a professional network.
+<br>
+Our curriculum covers everything from SEO and social media marketing to email marketing and content marketing, giving you a solid foundation of knowledge and live project experience that you can apply in your future career.
+
+</b>	</p>
+			</div><!-- .section-title end -->
+			
+
+		</div><!-- .col-md-6 end -->
+		<div class="col-md-6 col-md-pull-6 text-center ">
+		
+			<img src="./images/about-vector.png" alt="">
+			<!-- <img src="./images/seo.svg" alt=""> -->
+		
+		</div><!-- .col-md-6 end -->
+	</div><!-- .row end -->
+</div><!-- .container end -->
+<!-- about sec end -->
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div id="content-wrap">
+				<br>
+				<br>
+				<!-- === Our Services =========== -->
+				<div id="our-services" class="flat-section">
+				
+					<div class="section-content">
+				
+					
+						
+				<div class="container-fluid" style="padding: 0px 50px;">
+					<div class="row">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="num">01</div>
+							<h5>Placement Assistance</h5>
+							<br>
+							<p class="text-justify">Completion of our course makes you eligible to acquire a job in a suitable company with assistance from our placement cell.</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card card-second">
+							<div class="num">02</div>
+							<h5 >Advanced Modules</h5>
+							<br>
+							<p class="text-justify">Our course module brings updated and advanced knowledge in Digital marketing along with skilled and experienced tutors who are accomplished in the field.</p>
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card">
+							<div class="num">03</div>
+							<h5>Short Term Course</h5>
+							<br>
+							<p class="text-justify ">Our carefully crafted module includes all essential subjects in Digital Marketing which is covered over the period of 60 days</p>
+						
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="card card-second">
+							<div class="num">04</div>
+							<h5>Internship and Training</h5>
+							<br>
+							<p class="text-justify">During the course, our students undergo technical training and thereafter providing 3 months internship to develop real life project handling skill.</p>
+						</div>
+					</div>
+					</div>
+				</div>
+					</div><!-- .section-content end -->
+					
+
+				</div><!-- .flat-section end -->
+
+				
+
+				<!-- under certificate section -->
+				<!-- under certificate section end -->
+				<!-- === Intro Features =========== -->
+				<div id="intro-features" class="flat-section">
+
+					<div class="section-content">
+
+						<div class="container">
+							<div class="row">
+								
+
+								<div class="divider-140 divider-md-100"></div>
+									
+								<div class="col-md-8 col-md-offset-2">
+								
+									<div class="section-title text-center">
+										<!-- <span>Some Features</span> -->
+										<h2>Why Choose Us</h2>
+									</div><!-- .section-title end -->
+								
+								</div><!-- .col-md-8 end -->
+								<div class="col-sm-12">
+
+									<div class="slider-boxes-features-1">
+										<ul class="owl-carousel">
+											<li>
+												<div class="slide">
+													<div class="box-info box-info-2 text-center">
+														<div class="box-icon icon"><i class="flaticon-users"></i></div>
+														<div class="box-content">
+															<h4>Expert Instructors</h4>
+															<p class="text-justify"> Our team of expert instructors has years of experience in the digital marketing industry, and they are passionate about teaching the next generation of marketers. You'll learn from professionals who have worked with some of the biggest brands in the world</p>
+														</div><!-- .box-content end -->
+													</div><!-- .box-info end -->
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="box-info box-info-2 text-center">
+														<div class="box-icon icon"><i class="flaticon-layers-1"></i></div>
+														<div class="box-content">
+															<h4>Comprehensive Curriculum</h4>
+															<p class="text-justify">Our curriculum is designed to give you a well-rounded education in digital marketing, covering everything from SEO and social media to email marketing and content creation. We believe in equipping our students with the tools they need to succeed in the digital marketing industry.
+															</p>
+														</div><!-- .box-content end -->
+													</div><!-- .box-info end -->
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="box-info box-info-2 text-center">
+														<div class="box-icon icon"><i class="flaticon-stopwatch-1"></i></div>
+														<div class="box-content">
+															<h4>Hands-on Experience</h4>
+															<p class="text-justify">We believe that the best way to learn digital marketing is by doing it. That's why we provide our students with hands-on experience working on real-world projects. You'll get the opportunity to work with real clients and gain practical experience that you can use in your future career.</p>
+														</div><!-- .box-content end -->
+													</div><!-- .box-info end -->
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="box-info box-info-2 text-center">
+														<div class="box-icon icon"><i class="flaticon-target"></i></div>
+														<div class="box-content">
+															<h4>Job Placement Assistance</h4>
+															<p class="text-justify">We want our students to succeed in the digital marketing industry, and that's why we provide job placement assistance to all of our graduates. We'll help you find the right job for your skills and experience, and we'll be there to support you every step of the way</p>
+														</div><!-- .box-content end -->
+													</div><!-- .box-info end -->
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="box-info box-info-2 text-center">
+														<div class="box-icon icon"><i class="flaticon-layers-1"></i></div>
+														<div class="box-content">
+															<h4>Flexibility</h4>
+															<p class="text-justify">We understand that our students have busy lives, and that's why we offer flexible scheduling options to fit your needs. Whether you prefer to take classes during the day or in the evening, we have a schedule that will work for you.
+															</p>
+														</div><!-- .box-content end -->
+													</div><!-- .box-info end -->
+												</div><!-- .slide end -->
+											</li>
+										</ul>
+									</div><!-- .slider-boxes-features-1 end -->
+
+								</div><!-- .col-sm-12 end -->
+								
+							</div><!-- .row end -->
+						</div><!-- .container end -->
+
+					</div><!-- .section-content end -->
+
+				</div><!-- .flat-section end -->
+				<section class="section-tools">
+<div class="container ">
+	<div class="row">
+		<div class="col-md-12">
+								
+			<div class="text-white text-center" style="padding-bottom: 20px;">
+				<!-- <span>Some Features</span> -->
+				<br>
+				<br>
+				<h2>Tools Covered</h2>
+			</div><!-- .section-title end -->
+			<div class="slider-clients">
+				<ul class="owl-carousel">
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/FacebookBusinessManager.jpg" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/google-keyword-planner.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/GoogleTrends.jpg" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Ubersuggest.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/similarweb.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/google-ad-manager.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Linkedin-ad-manager.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Semrush.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Spyfu.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Buffer-Logo.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/se-ranking-logo.jpg" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Screaming-Frog.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/PageSpeed-Insights.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/google_analytics.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/adobe-photoshop-logo.webp" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/canva.jpg" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/MailChimp.jpg" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Elementor.png" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/GoogleDataStudio.jpg" alt=""></a></div>
+						</div><!-- .slide end -->
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/HubSpot-Logo.png" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/majesticseo.webp" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Moz.png" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/GT-Metrix.png" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/keywordEverywhere.png" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/VidIQ.avif" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/Grammarly.png" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/GoogleTagAssistant.png" alt=""></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="slide">
+							<div class="client-single"><a href="#"><img src="./images/files/sliders/clients/FacebookPixelHelper.png" alt=""></a></div>
+						</div>
+					</li>
+				</ul>
+			</div><!-- .slider-clients end -->
+		
+		</div><!-- .col-md-12 end -->
+	</div>
+</div>
+</section>
+				<!-- === Some Facts =========== -->
+				<div id="some-facts" class="flat-section certificatesec">
+				
+					<div class="section-content">
+				
+						<div class="container" id="certification">
+							<div class="row">
+								<div class="col-md-12 text-center">
+									
+									<div class="section-title">
+										<!-- <span>Some Facts</span> -->
+										<h2>Certificate in Digital Marketing
+										</h2>
+										<p>
+											A certificate for the 3-month SEO and Digital Marketing course will be provided to acknowledge the participant's knowledge and understanding of the subject. In addition to the course certificate, a certificate of completion for the 3-month internship will be provided to acknowledge the participant's practical experience in digital marketing.										</p>
+									</div><!-- .section-title end -->
+									<h4>Online Certifications</h4>
+									<div class="slider-clients">
+										<ul class="owl-carousel">
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/bing.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/digital-garage.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/download.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/facebook-ads.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/google-ads.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/google-analytics-certified.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/google-certification.jpg" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/Google-Skillshop-.webp" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/hubspot.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/linked-in.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/my-business.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/search-console.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											<li>
+												<div class="slide">
+													<div class="client-single"><a href="#"><img src="./images/Certification/Tag_manager.png" alt=""></a></div>
+												</div><!-- .slide end -->
+											</li>
+											
+										</ul>
+									</div><!-- .slider-clients end -->
+
+								</div><!-- .col-md-6 end -->
+									
+								<!-- <div class="col-md-6 text-right mt-md-60 md-text-left">
+								
+									<img src="http://via.placeholder.com/420x390?text=Image" alt="">
+								
+								</div> -->
+								<!-- .col-md-6 end -->
+							</div><!-- .row end -->
+						</div><!-- .container end -->
+
+					</div><!-- .section-content end -->
+
+				</div><!-- .flat-section end -->
+				
+
+				
+
+				<!-- === CTA Title 1 =========== -->
+				<div id="cta-title-1" class="flat-section">
+				
+					<div class="section-content">
+				
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 text-center">
+				
+				
+									<h1>Join Now! Become a<span class="colored"> Digital Marketer</span></h1>
+									<!-- <p>
+										This should be used to tell a story and let your users know a little more about your product or service. How can
+										you benefit them?
+									</p> -->
+									<a class="btn scroll-to x-large colorful hover-colorful-darken mt-40" href="#banner">Register Now</a>
+				
+								</div><!-- .col-md-12 end -->
+							</div><!-- .row end -->
+						</div><!-- .container end -->
+				
+					</div><!-- .section-content end -->
+				
+				</div><!-- .flat-section end -->
+
+			</div><!-- #content-wrap -->
+
+		</section><!-- #content end -->
+		<a href="https://wa.me/+917994627673" >
+			<img width="50px" src="./images/whatsapp.png" alt="WhatsApp" style="position: fixed; bottom: 70px; right: 20px;z-index: 999;">
+		  </a>
+		<!-- Footer
+		============================================= -->
+		<footer id="footer">
+
+			<div id="footer-bar-1" class="footer-bar">
+			
+				<div class="footer-bar-wrap">
+			
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+			
+								<div class="fb-row">
+									<div class="col-sm-4">
+
+										<div class="box-info box-info-2 mb-sm-50">
+											<div class="box-content">
+												<h4>Our Address</h4>
+												<p>
+													Way WeDesign,<br>
+47/1403A,Ivees, MRERA-69, Chalikkavattom, Vennala<br>
+Kochi, Kerala
+													
+												</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+
+									</div><!-- .col-sm-4 end -->
+									<div class="col-sm-4">
+									
+										<div class="box-info box-info-2 mb-sm-50">
+											<div class="box-content">
+												<h4>Our Phones</h4>
+												<p>
+													+91 799 464 3673
+													
+												</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									
+									</div><!-- .col-sm-4 end -->
+									<div class="col-sm-4">
+									
+										<div class="box-info box-info-2">
+											<div class="box-content">
+												<h4>Email Contact</h4>
+												<p>
+													contact@waywedesign.com
+													
+												</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									
+									</div><!-- .col-sm-4 end -->
+								</div><!-- .fb-row end -->
+			
+							</div><!-- .col-md-12 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+			
+				</div><!-- .footer-bar-wrap -->
+			
+			</div><!-- #footer-bar-1 end -->
+
+			<div id="footer-bar-2" class="footer-bar">
+
+				<div class="footer-bar-wrap">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+
+								<div class="fb-row">
+									<div class="copyrights-message"> 2023 © <a href="https://waywedesign.com" target="_blank"><span class="colored">waywedesign</span></a>. All Rights Reserved.</div>
+									<ul class="social-icons animated x4 grey hover-colorful icon-only">
+										<li><a class="si-facebook" href="https://www.facebook.com/contact.waywedesign/"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a></li>
+										<li><a class="si-twitter" href="https://twitter.com/waywedesign"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a></li>
+										<li><a class="si-instagramorange" href="https://www.instagram.com/waywedesign/"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a></li>
+										<li><a class="si-instagramorange" href="https://www.linkedin.com/company/13701254/"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a></li>
+										<li><a class="si-instagramorange" href="https://api.whatsapp.com/send?phone=917994643673&text=Your%20One%20Stop%20Solution%20for%20Branding%20and%20Digital%20Marketing%20Needs!"><i class="fa fa-whatsapp"></i><i class="fa fa-whatsapp"></i></a></li>
+									</ul><!-- .social-icons end -->
+								</div><!-- .fb-row end -->
+
+							</div><!-- .col-md-12 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+
+				</div><!-- .footer-bar-wrap -->
+
+			</div><!-- #footer-bar-2 end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #full-container end -->
+
+	<a class="scroll-top-icon scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+	<script src="js/jRespond.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/jquery.stellar.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.mb.YTPlayer.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/simple-scrollbar.min.js"></script>
+	<script src='js/functions.js'></script>
+	
+<script>
+	jQuery('#form').validate({ // Replace $ with jQuery
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      phone: "required"
+    },
+    messages: {
+      name: "please enter your Name",
+      email: {
+        required: "please enter your email address",
+      },
+      phone: {
+        required: "please enter your phone number",
+      }
+    }
+  });
+	jQuery('#formpop').validate({ // Replace $ with jQuery
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      phone: "required"
+    },
+    messages: {
+      name: "please enter your Name",
+      email: {
+        required: "please enter your email address",
+      },
+      phone: {
+        required: "please enter your phone number",
+      }
+    }
+  });
+</script>
+	<script>
+				function sendMailPop(){
+			if (!jQuery('#formpop').valid()) { // Check if the form is valid
+      return;
+    }
+			document.getElementById('formpop').addEventListener('submit',function(event){
+				event.preventDefault();
+				const templateParams = {
+  name : document.getElementById('namePop').value,
+  email : document.getElementById('emailPop').value,
+  phone : document.getElementById('phonePop').value,
+  qualification : document.getElementById('qualificationPop').value,
+  };
+  
+				emailjs.send('service_l3sz6l9', 'template_5r508vh', templateParams)
+				.then(function(){
+					alert('Your request has been received. Our team will get back to you as soon as possible.  Thank you for reaching out to us.');
+					let success = document.getElementById('send-button');
+					let form = document.getElementById('form')
+					form.reset();
+					success.innerHTML = "sucessFully Send"
+					success.style.backgroundColor = "green"
+					setInterval(()=>window.location.reload(true),1000)
+				},function(error){
+					console.log('Falied',error)
+				})
+
+			})
+		}
+	  </script>
+	<script>
+		
+		function sendMail(){
+			if (!jQuery('#form').valid()) { // Check if the form is valid
+      return;
+    }
+			document.getElementById('form').addEventListener('submit',function(event){
+				event.preventDefault();
+				const templateParams = {
+  name : document.getElementById('name').value,
+  email : document.getElementById('email').value,
+  phone : document.getElementById('phone').value,
+  qualification : document.getElementById('qualification').value,
+  };
+  
+				emailjs.send('service_l3sz6l9', 'template_u0kcx6a', templateParams)
+				.then(function(){
+					alert('Your request has been received. Our team will get back to you as soon as possible.  Thank you for reaching out to us.');
+					let success = document.getElementById('success-button');
+					let form = document.getElementById('form')
+					form.reset();
+					success.innerHTML = "sucessFully Send"
+					success.style.backgroundColor = "green"
+					setInterval(()=>window.location.reload(true),3000)
+				},function(error){
+					console.log('Falied',error)
+				})
+
+			})
+		}
+	  </script>
+	
+</body>
+</html>

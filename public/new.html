@@ -1,0 +1,415 @@
+<!-- import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+const Menu = () => {
+  
+  return (
+    <div>
+      <header className="main-header clearfix">
+        <div className="main-header__top clearfix">
+          <div className="main-header__top-inner clearfix">
+            <div className="main-header__top-left">
+              <ul className="list-unstyled main-header__top-address">
+                <li>
+                  <div className="icon">
+                    <span className="icon-pin" />
+                  </div>
+                  <div className="text">
+                    <p>
+                      Way WeDesign, 47/1403A,Ivees, MRERA-69, Chalikkavattom,
+                      Vennala Kochi, Kerala
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <span className="icon-email" />
+                  </div>
+                  <div className="text">
+                    <p>
+                      <a href="mailto:Contact@waywedesign.com">
+                        Contact@waywedesign.com
+                      </a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="main-header__top-right">
+              {/* <div className="main-header__top-right-text">
+              <p><span>Now Hiring:</span> Are you a driven and motivated 1st Line IT Support Engineer?</p>
+            </div> */}
+              <div className="main-header__top-right-social">
+                <a href="#">
+                  <i className="fab fa-twitter" />
+                </a>
+                <a href="#">
+                  <i className="fab fa-facebook" />
+                </a>
+                <a href="#">
+                  <i className="fab fa-pinterest-p" />
+                </a>
+                <a href="#">
+                  <i className="fab fa-instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav className="main-menu clearfix">
+          <div className="main-menu-wrapper clearfix">
+            <div className="main-menu-wrapper-inner clearfix">
+              <div className="main-menu-wrapper__left clearfix">
+                <div className="main-menu-wrapper__logo">
+                  <Link to="/">
+                    <img width="150px" src="assets/images/logo-wwd.png" alt />
+                  </Link>
+                </div>
+                <div className="main-menu-wrapper__main-menu">
+                  <a href="#" className="mobile-nav__toggler">
+                    <i className="fa fa-bars" />
+                  </a>
+                  <ul className="main-menu__list">
+                    <li>
+                      <Link to="/">Home</Link>
+                    </li>
+                    <li className="dropdown">
+                      <Link to="/about">About Us</Link>
+                      <ul>
+                        <li>
+                          <Link to="/our-team">Our Team</Link>
+                        </li>
+                        <li>
+                          <Link to="/gallery">Gallery</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="dropdown">
+                      <Link to=""> Our Services</Link>
+                      <ul>
+                      <li className="dropdown">
+                      <Link to="">software &platform developments </Link>
+                      <ul>
+                      <li>
+                        <Link to='/dashboard-reporting'>Dashboard Reporting</Link>
+                        </li>
+                      <li>
+                        <Link to='/mobile-app-development'>Mobile App Development</Link>
+                        </li>
+                      <li>
+                        <Link to='/pen-testing'>Pen Testing</Link>
+                        </li>
+                      <li>
+                        <Link to='/web-development'>Web Development</Link>
+                        </li>
+                      <li>
+                        <Link to='/iot-development'>IOT Development</Link>
+                        </li>
+                      <li>
+                        <Link to='/media'>Media</Link>
+                        </li>
+                      <li>
+                        <Link to='/retail-and-ecommerce'>Retail And Ecommerce</Link>
+                        </li>
+                      <li>
+                        <Link to='/assessement-platforms'>Assessment Platforms</Link>
+                        </li>
+                        <li>
+                          <Link to="payroll-management-system">Payroll Management System</Link>
+                        </li>
+                      </ul>
+                      
+                      </li>
+                        
+                        
+                          <li className="dropdown">
+                          <Link to="/digital-marketing">Digital Marketing</Link>
+                            <ul>
+                              <li>
+                                <Link to="/search-engine-optimization">Search Engine Optimization (SEO)</Link>
+                              </li>
+                              <li>
+                                <Link to="/social-media-marketing">Social Media Marketing(SMM)</Link>
+                              </li>
+                              <li>
+                                <Link to="/google-ads">Google Ads</Link>
+                              </li>
+                              <li>
+                                <Link to="/ppc">PPC</Link>
+                              </li>
+                              <li>
+                                <Link className="graphic-designing">Graphic Designing</Link>
+                              </li>
+                            </ul>
+                         
+                        </li>
+                        <li>
+                          <Link to="/cloud-service ">Cloud Service </Link>
+                        </li>
+                        <li>
+                          <Link to="/hrm">HRM</Link>
+                        </li>
+                        <li>
+                          <Link to="/digital-academy">Digital Academy</Link>
+                        </li>
+                       
+                      </ul>
+                    </li>
+                    <li>
+                      <Link to="/careers">Careers</Link>
+                    </li>
+                    
+                    <li>
+                      <Link to="/blog">Blogs</Link>
+                    </li>
+                    <li>
+                      <Link to="/contact">Contact Us</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="main-menu-wrapper__right">
+                <div className="main-menu-wrapper__call">
+                  <div className="main-menu-wrapper__call-icon">
+                    <img src="assets/images/shapes/phone-icon.png" alt />
+                  </div>
+                  <div className="main-menu-wrapper__call-number">
+                    <p>Have any questions?</p>
+                    <h5>
+                      <a href="tel:926668880000">Free: + 92 666 888 0000</a>
+                    </h5>
+                  </div>
+                </div>
+                <div className="main-menu-wrapper__search-box-cart-box">
+                  <a
+                    href="#"
+                    className="main-menu-wrapper__search search-toggler icon-magnifying-glass"
+                  />
+
+                  <a
+                    href="contact.html"
+                    className="main-menu-wrapper__cart icon-avatar"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div className="stricky-header stricked-menu main-menu">
+        <div className="sticky-header__content" />
+        {/* /.sticky-header__content */}
+      </div>
+      {/* /.stricky-header */}
+    </div>
+  );
+};
+
+export default Menu; -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header className="main-header clearfix">
+    <div className="main-header__top clearfix">
+      <div className="main-header__top-inner clearfix">
+        <div className="main-header__top-left">
+          <ul className="list-unstyled main-header__top-address">
+            <li>
+              <div className="icon">
+                <span className="icon-pin" />
+              </div>
+              <div className="text">
+                <p>
+                  Way WeDesign, 47/1403A,Ivees, MRERA-69, Chalikkavattom,
+                  Vennala Kochi, Kerala
+                </p>
+              </div>
+            </li>
+            <li>
+              <div className="icon">
+                <span className="icon-email" />
+              </div>
+              <div className="text">
+                <p>
+                  <a href="mailto:Contact@waywedesign.com">
+                    Contact@waywedesign.com
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className="main-header__top-right">
+          {/* <div className="main-header__top-right-text">
+          <p><span>Now Hiring:</span> Are you a driven and motivated 1st Line IT Support Engineer?</p>
+        </div> */}
+          <div className="main-header__top-right-social">
+            <a href="#">
+              <i className="fab fa-twitter" />
+            </a>
+            <a href="#">
+              <i className="fab fa-facebook" />
+            </a>
+            <a href="#">
+              <i className="fab fa-pinterest-p" />
+            </a>
+            <a href="#">
+              <i className="fab fa-instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Navbar  className="main-menu clearfix">
+      <div className="main-menu-wrapper clearfix">
+        <div className="main-menu-wrapper-inner clearfix">
+          <div className="main-menu-wrapper__left clearfix">
+            <div className="main-menu-wrapper__logo">
+              <Link to="/">
+                <img width="150px" src="assets/images/logo-wwd.png" alt />
+              </Link>
+            </div>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+            <Navbar.Collapse id="basic-navbar-nav" className="main-menu-wrapper__main-menu">
+              <a href="#" className="mobile-nav__toggler">
+                <i className="fa fa-bars" />
+              </a>
+              <ul className="main-menu__list">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="dropdown">
+                  <Link to="/about">About Us</Link>
+                  <ul>
+                    <li>
+                      <Link to="/our-team">Our Team</Link>
+                    </li>
+                    <li>
+                      <Link to="/gallery">Gallery</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <Link to=""> Our Services</Link>
+                  <ul>
+                  <li className="dropdown">
+                  <Link to="">software &platform developments </Link>
+                  <ul>
+                  <li>
+                    <Link to='/dashboard-reporting'>Dashboard Reporting</Link>
+                    </li>
+                  <li>
+                    <Link to='/mobile-app-development'>Mobile App Development</Link>
+                    </li>
+                  <li>
+                    <Link to='/pen-testing'>Pen Testing</Link>
+                    </li>
+                  <li>
+                    <Link to='/web-development'>Web Development</Link>
+                    </li>
+                  <li>
+                    <Link to='/iot-development'>IOT Development</Link>
+                    </li>
+                  <li>
+                    <Link to='/media'>Media</Link>
+                    </li>
+                  <li>
+                    <Link to='/retail-and-ecommerce'>Retail And Ecommerce</Link>
+                    </li>
+                  <li>
+                    <Link to='/assessement-platforms'>Assessment Platforms</Link>
+                    </li>
+                    <li>
+                      <Link to="payroll-management-system">Payroll Management System</Link>
+                    </li>
+                  </ul>
+                  
+                  </li>
+                    
+                    
+                      <li className="dropdown">
+                      <Link to="/digital-marketing">Digital Marketing</Link>
+                        <ul>
+                          <li>
+                            <Link to="/search-engine-optimization">Search Engine Optimization (SEO)</Link>
+                          </li>
+                          <li>
+                            <Link to="/social-media-marketing">Social Media Marketing(SMM)</Link>
+                          </li>
+                          <li>
+                            <Link to="/google-ads">Google Ads</Link>
+                          </li>
+                          <li>
+                            <Link to="/ppc">PPC</Link>
+                          </li>
+                          <li>
+                            <Link className="graphic-designing">Graphic Designing</Link>
+                          </li>
+                        </ul>
+                     
+                    </li>
+                    <li>
+                      <Link to="/cloud-service ">Cloud Service </Link>
+                    </li>
+                    <li>
+                      <Link to="/hrm">HRM</Link>
+                    </li>
+                    <li>
+                      <Link to="/digital-academy">Digital Academy</Link>
+                    </li>
+                   
+                  </ul>
+                </li>
+                <li>
+                  <Link to="/careers">Careers</Link>
+                </li>
+                
+                <li>
+                  <Link to="/blog">Blogs</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact Us</Link>
+                </li>
+              </ul>
+            </Navbar.Collapse>
+          </div>
+          <div className="main-menu-wrapper__right">
+            <div className="main-menu-wrapper__call">
+              <div className="main-menu-wrapper__call-icon">
+                <img src="assets/images/shapes/phone-icon.png" alt />
+              </div>
+              <div className="main-menu-wrapper__call-number">
+                <p>Have any questions?</p>
+                <h5>
+                  <a href="tel:926668880000">Free: + 92 666 888 0000</a>
+                </h5>
+              </div>
+            </div>
+            <div className="main-menu-wrapper__search-box-cart-box">
+              <a
+                href="#"
+                className="main-menu-wrapper__search search-toggler icon-magnifying-glass"
+              />
+
+              <a
+                href="contact.html"
+                className="main-menu-wrapper__cart icon-avatar"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Navbar>
+  </header>
+</body>
+</html>
